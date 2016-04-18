@@ -75,11 +75,12 @@ header h1 {
 }
 header h1 a {
     display:inline-block;
-    -webkit-transform: translate3d(0,0,0);
-    -webkit-transition: 160ms -webkit-transform ease-out;
+    -webkit-transition: all 160ms ease-out; /* Safari */
+    transition: all 160ms ease-out;
+    transform: translate(0px, 0px);
 }
 header h1 a:hover {
-    -webkit-transform: translate3d(0,2px,0);
+    transform: translate(0px, 2px);
     cursor:pointer;
 }
 header h1 img { display:block; float:left; }
