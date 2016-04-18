@@ -2,13 +2,6 @@
     width: device-width;
 }
 
-/* Awesome CSS-only loader */
-@keyframes loading {
-  0%   { transform: scale(1); }
-  50%  { transform: scale(1.2) rotate(0.02deg); }
-  100% { transform: scale(1); }
-}
-
 @font-face {
     font-family: 'handwritting';
     font-style: normal;
