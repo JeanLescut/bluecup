@@ -422,7 +422,7 @@ footer a:link {
         /* For information, we fix :  translate = 288 * (1 - 1/scale) */
         -ms-transform: scale(0.8,0.8) translate(0px,-72px); /* IE 9 */
    	    -moz-transform: scale(0.8,0.8) translate(0px,-72px); /* Firefox */
-   	    transform: scale(0.8,0.8) translate(0px,-72px);
+   	    transform: scale(0.8,0.8);
    	    transform-origin: top;
     }
 }
@@ -431,7 +431,7 @@ footer a:link {
         /* For information, we fix :  translate = 288 * (1 - 1/scale) */
         -ms-transform: scale(1,1) translate(0px,0px); /* IE 9 */
    	    -moz-transform: scale(1,1) translate(0px,0px); /* Firefox */
-   	    transform: scale(1,1) translate(0px,0px); 
+   	    transform: scale(1,1); 
     }
 }
 /* Columns template */
@@ -439,8 +439,8 @@ footer a:link {
     body {
         /* For information, we fix :  translate = 288 * (1 - 1/scale) */
         -ms-transform: scale(0.9,0.9) translate(0px,-32px); /* IE 9 */
-   	    -moz-transform: scale(1,1) translate(0px,-32px); /* Firefox */
-   	    transform: scale(1,1) translate(0px,-32px);
+   	    -moz-transform: scale(0.9,0.9) translate(0px,-32px); /* Firefox */
+   	    transform: scale(0.9,0.9);
    	    width: 680px;
     }
     header { margin:0; }
