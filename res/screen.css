@@ -418,7 +418,13 @@ footer a:link {
 /* Viewport size */
 /* Stacked template */
 @media screen {
-    body { zoom: 0.8; -moz-transform: scale(0.8) translateY(-72px);} /* translateY = 288 * (1 - 1/scale) */
+    body {
+        /* For information, we fix :  translate = 288 * (1 - 1/scale) */
+        -ms-transform: scale(0.8,0.8) translate(0px,-72px); /* IE 9 */
+   	    -webkit-transform: scale(0.8,0.8) translate(0px,-72px); /* Safari */
+   	    -moz-transform: scale(0.8,0.8) translate(0px,-72px); /* Firefox */
+   	    transform: scale(0.8,0.8) translate(0px,-72px); 
+    }
 }
 @media screen and (min-width: 480px) {
     body { zoom: 1; -moz-transform: scale(1) translateY(0px); } /* translateY = 288 * (1 - 1/scale) */
