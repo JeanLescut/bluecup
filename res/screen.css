@@ -75,8 +75,8 @@ header h1 {
 }
 header h1 a {
     display:inline-block;
-    -webkit-transition: all 160ms ease-out; /* Safari */
-    transition: all 160ms ease-out;
+    -webkit-transition: transform 160ms ease-out; /* Safari */
+    transition: transform 160ms ease-out;
     transform: translate(0px, 0px);
 }
 header h1 a:hover {
