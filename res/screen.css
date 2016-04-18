@@ -30,7 +30,6 @@ body {
     font-weight: lighter;
     margin: 0 auto;
     width: 100%;
-    zoom:0.8;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-font-smoothing: antialiased;
@@ -418,11 +417,14 @@ footer a:link {
 
 /* Viewport size */
 
+@media screen {
+    body { zoom: 0.8;}
+}
 @media screen and (min-width: 480px) {
-    body { zoom: 0.8; -moz-transform: scale(0.8); }
+    body { zoom: 1; -moz-transform: scale(0.8) translateY(-75px); } /* -75px = 150 * -0.2 because 0.8 scale = 1 - 0.2*/
 }
 @media screen and (min-width: 680px) {
-    body { zoom: 0.9; -moz-transform: scale(0.9); width: 680px; }
+    body { zoom: 0.9; -moz-transform: scale(0.9) ; width: 680px; }/* -75px = 150 * -0.1 because 0.8 scale = 1 - 0.2*/
     header { margin:0; }
     footer { margin:5% 0; }
 }
