@@ -416,13 +416,14 @@ footer a:link {
 }
 
 /* Viewport size */
-
+/* Stacked template */
 @media screen {
-    body { zoom: 0.8;}
+    body { zoom: 0.8; -moz-transform: scale(0.8) translateY(-75px);}
 }
 @media screen and (min-width: 480px) {
-    body { zoom: 1; -moz-transform: scale(0.8) translateY(-75px); } /* -75px = 150 * -0.2 because 0.8 scale = 1 - 0.2*/
+    body { zoom: 1; -moz-transform: scale(1) translateY(0px); } /* -75px = 150 * -0.2 because 0.8 scale = 1 - 0.2*/
 }
+/* Columns template */
 @media screen and (min-width: 680px) {
     body { zoom: 0.9; -moz-transform: scale(0.9) ; width: 680px; }/* -75px = 150 * -0.1 because 0.8 scale = 1 - 0.2*/
     header { margin:0; }
