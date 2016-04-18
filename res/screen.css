@@ -2,19 +2,9 @@
     width: device-width;
 }
 
-@font-face {
-    font-family: 'handwritting';
-    font-style: normal;
-    font-weight: 500;
-    src: url("../res/tallpaul.ttf")
-        format('truetype');
-}
-
 #blog-title {
-    font-family: 'handwritting';  
+    font-family: "Times New Roman", Georgia, Serif; 
     font-size: 40px;
-    font-style: italic;
-    text-transform: uppercase;
 }
 #blog-title a{    
     text-decoration: none;
