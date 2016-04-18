@@ -418,39 +418,22 @@ footer a:link {
 /* Viewport size */
 /* Stacked template */
 @media screen {
-    body {
-        /* For information, we fix :  translate = 288 * (1 - 1/scale) */
-        -ms-transform: scale(0.8,0.8) translate(0px,-72px); /* IE 9 */
-   	    -moz-transform: scale(0.8,0.8) translate(0px,-72px); /* Firefox */
-   	    transform: scale(0.8,0.8);
-   	    transform-origin: top;
-    }
+    body {transform: scale(0.8);transform-origin: top;}
 }
 @media screen and (min-width: 480px) {
-    body {
-        /* For information, we fix :  translate = 288 * (1 - 1/scale) */
-        -ms-transform: scale(1,1) translate(0px,0px); /* IE 9 */
-   	    -moz-transform: scale(1,1) translate(0px,0px); /* Firefox */
-   	    transform: scale(1,1); 
-    }
+    body { transform: scale(1); }
 }
 /* Columns template */
 @media screen and (min-width: 680px) {
-    body {
-        /* For information, we fix :  translate = 288 * (1 - 1/scale) */
-        -ms-transform: scale(0.9,0.9) translate(0px,-32px); /* IE 9 */
-   	    -moz-transform: scale(0.9,0.9) translate(0px,-32px); /* Firefox */
-   	    transform: scale(0.9,0.9);
-   	    width: 680px;
-    }
+    body {transform: scale(0.9); width: 680px;}
     header { margin:0; }
     footer { margin:5% 0; }
 }
 @media screen and (min-width: 896px) { /* 896px = 1.2 * 680px + 80px */
-    body { zoom: 1.2; -moz-transform: scale(1.2) translateY(48px);} /* translateY = 288 * (1 - 1/scale) */
+    body {transform: scale(1.2);} /* translateY = 288 * (1 - 1/scale) */
 }
 @media screen and (min-width: 1160px) { /* 1160px = 1.3 * 800px + 120px */
-    body { zoom: 1.3; -moz-transform: scale(1.3) translateY(66px);  width: 800px; } /* translateY = 288 * (1 - 1/scale) */
+    body { transform: scale(1.3); width: 800px; } /* translateY = 288 * (1 - 1/scale) */
 }
 
 /* device specifics */
